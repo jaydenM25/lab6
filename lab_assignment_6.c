@@ -8,7 +8,7 @@ int search(int numbers[], int low, int high, int value) {
 			return search(numbers, low, mid-1, value);
 		else if (value > numbers[mid])
 			return search(numbers, mid+1, high, value);
-		else if(high == low) 
+		else
 			return mid;
 	}
 	return -1;
